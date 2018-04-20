@@ -1,0 +1,3 @@
+<li *ngFor="let author of authors">{{author.name}}  <a [routerLink]="['edit',author._id]">update</a>
+<button (click)="deleteTheAuthor(author._id)">delete</button>
+</li>
